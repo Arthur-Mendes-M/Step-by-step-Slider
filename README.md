@@ -13,3 +13,5 @@ Este é um slider desenvolvido com:
 - Adaptabilidade de acordo com o tamanho da tela do dispositivo usado.
 
 *Tal projeto estava em meus planos a algum tempo, porém dentre algumas tentativas não houve êxito, contudo, com persistência consegui realiza-lo em seus 4 niveis (divididos por mim em nivel de dificuldade) sem o embasamento completo em uma ou mais fontes.*
+
+<a href="https://arthur-mendes-m.github.io/Step-by-step-Slider/">*Caso queira testar fique a vontade :}*</a>
