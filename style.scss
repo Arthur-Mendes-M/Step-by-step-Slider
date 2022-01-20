@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #1f1f1f;
+    color: #FFFFFF;
+}
+
+.container {
+    width: 80%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 100px -15px rgb(49, 49, 49);;
+
+    #slider {
+        height: 100%;
+        display: flex;
+        transition: all .4s linear;
+
+        img {
+            min-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    #indicators {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 10;
+
+        .indicator {
+            all: unset;
+            width: 1.3rem;
+            height: 1.3rem;
+            border: 1px solid rgb(7, 162, 224);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s linear;
+
+            &:hover, &:checked {
+                background-color: rgb(7, 162, 224);
+                border-color: white;
+            }
+
+            &:checked:hover {
+                background-color: rgb(6, 128, 177);
+            }
+        }
+    }
+
+    .controls {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        padding: 0 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            width: 50px;
+            height: 50px;
+            background: none;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            color: rgb(7, 162, 224);
+            transition: all .3s linear;
+            font-size: 2.5rem;
+
+            &:hover {
+                color: rgb(6, 128, 177);
+            }
+        }
+    }
+}
+

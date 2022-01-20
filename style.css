@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #1f1f1f;
+  color: #FFFFFF;
+}
+
+.container {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 0 0 100px -15px #313131;
+}
+.container #slider {
+  height: 100%;
+  display: flex;
+  transition: all 0.4s linear;
+}
+.container #slider img {
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container #indicators {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  z-index: 10;
+}
+.container #indicators .indicator {
+  all: unset;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid #07a2e0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.container #indicators .indicator:hover, .container #indicators .indicator:checked {
+  background-color: #07a2e0;
+  border-color: white;
+}
+.container #indicators .indicator:checked:hover {
+  background-color: #0680b1;
+}
+.container .controls {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .controls button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #07a2e0;
+  transition: all 0.3s linear;
+  font-size: 2.5rem;
+}
+.container .controls button:hover {
+  color: #0680b1;
+}/*# sourceMappingURL=style.css.map */
